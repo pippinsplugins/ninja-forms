@@ -122,7 +122,7 @@ if( ! is_admin() ) {
 
 /* Require Pre-Registered Tabs and their sidebars */
 
-//if ( is_admin() ) {
+if ( is_admin() ) {
 
 	//Require EDD autoupdate file
 	if( !class_exists( 'EDD_SL_Plugin_Updater' ) ) {
@@ -248,7 +248,7 @@ if( ! is_admin() ) {
 
 	/* System Status */
 	require_once( NINJA_FORMS_DIR . "/includes/classes/class-nf-system-status.php" );
-//}
+}
 
 /* Require Pre-Registered Fields */
 require_once( NINJA_FORMS_DIR . "/includes/fields/textbox.php" );
